@@ -9,6 +9,12 @@ class SUIT(enum.Enum):
     DIAMOND = 2
     CLUB = 3
 
+SuitStrings = {
+    SUIT.HEART:   'hearts',
+    SUIT.SPADE:   'spades',
+    SUIT.DIAMOND: 'diamonds',
+    SUIT.CLUB:    'clubs',
+    }
 
 class VALUE(enum.Enum):
     TWO = 0
@@ -25,7 +31,21 @@ class VALUE(enum.Enum):
     KING = 11
     ACE = 12
 
-
+ValueStrings = {
+    VALUE.TWO:   '2',
+    VALUE.THREE: '3',
+    VALUE.FOUR:  '4',
+    VALUE.FIVE:  '5',
+    VALUE.SIX:   '6',
+    VALUE.SEVEN: '7',
+    VALUE.EIGHT: '8',
+    VALUE.NINE:  '9',
+    VALUE.TEN:   '10',
+    VALUE.JACK:  'jack',
+    VALUE.QUEEN: 'queen',
+    VALUE.KING:  'king',
+    VALUE.ACE:   'ace'
+}
 
 class Card:
     def __init__(self, suit, value):
